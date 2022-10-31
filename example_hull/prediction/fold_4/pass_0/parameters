@@ -2,10 +2,10 @@
 trainingset size:                        3200  
 testset size:                            800   
 Normalize data:                          True  
-subfeature #0 [0] scale factor:          60.83558114869849
-subfeature #1 [1] scale factor:          8.779192051765344
-subfeature #2 [2] scale factor:          6.9999969875340025
-label      #0 [FOS_length] scale factor: 55.9989
+subfeature #0 [0] scale factor:          60.83721655535331
+subfeature #1 [1] scale factor:          8.778965482512465
+subfeature #2 [2] scale factor:          6.999998156774116
+label      #0 [FOS_length] scale factor: 55.9971
 label      #1 [stem_distance] scale factor: 14.9973
-label      #2 [entrance_angle_wl] scale factor: 89.9781
+label      #2 [entrance_angle_wl] scale factor: 89.9969
 label      #3 [WL_starttan_gradient] scale factor: 119.9751

@@ -16,7 +16,7 @@ featureExtraction
         z                   'z';
        // radius              'np.sqrt(x**2+y**2+z**2)';
     };
-    numberOfFeatures        1024;
+    numberOfFeatures        512;
     // sample type: uniform or gradient
     sampleType              uniform;
 };
