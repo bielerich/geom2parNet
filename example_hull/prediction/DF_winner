@@ -1,0 +1,6 @@
+label	FOS_length	FOS_length	FOS_length	stem_distance	stem_distance	stem_distance	entrance_angle_wl	entrance_angle_wl	entrance_angle_wl	WL_starttan_gradient	WL_starttan_gradient	WL_starttan_gradient
+set	trainingset	testset	path	trainingset	testset	path	trainingset	testset	path	trainingset	testset	path
+RMSE	0.3615931272506714	0.3830538988113403	prediction/fold_1/pass_0/	0.3615931272506714	0.3830538988113403	prediction/fold_1/pass_0/	0.3615931272506714	0.3830538988113403	prediction/fold_1/pass_0/	0.3615931272506714	0.3830538988113403	prediction/fold_1/pass_0/
+MAPE	0.2389339506626129	0.2561521530151367	prediction/fold_0/pass_0/	0.2389339506626129	0.2561521530151367	prediction/fold_0/pass_0/	0.2389339506626129	0.2561521530151367	prediction/fold_0/pass_0/	0.2389339506626129	0.2561521530151367	prediction/fold_0/pass_0/
+R2	1.0470876693725586	1.1981136798858645	prediction/fold_1/pass_1/	1.0470876693725586	1.1981136798858645	prediction/fold_1/pass_1/	1.0470876693725586	1.1981136798858645	prediction/fold_1/pass_1/	1.0470876693725586	1.1981136798858645	prediction/fold_1/pass_1/
+LOSS	0.0011250704992562	0.0034371942747384	prediction/fold_4/pass_0/	0.0011250704992562	0.0034371942747384	prediction/fold_4/pass_0/	0.0011250704992562	0.0034371942747384	prediction/fold_4/pass_0/	0.0011250704992562	0.0034371942747384	prediction/fold_4/pass_0/

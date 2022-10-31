@@ -1,0 +1,52 @@
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+// *  TRAINING DICT                                                          * 
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+// Define parameters for learning routine
+
+doValidation                yes;
+
+model
+{    
+    BATCH_SIZE          32;
+    EPOCHS              50;
+};
+
+modelValidation
+{
+    type                k-folding;
+    k                   5;
+    numberOfPasses      5;
+};
+
+saveData
+{
+    modelData
+    {
+        directory           model/;
+        model               model/network/;
+        weights             model/weights/;
+        history             history;
+        summary             model_summary;
+        winnerModel         winner_model;
+    };
+    
+    predictionData
+    {
+        directory           prediction/;
+        loss                DF_losses;
+        testset             DF_testset;
+        trainingset         DF_trainingset;
+        winning             DF_winner;
+
+        statistics          
+        {
+            directory       prediction/;
+            testset         DF_testset_deviation;       // calculated in postProcessing
+            trainingset     DF_trainingset_deviation;   // calculated in postProcessing
+            parameters      DF_statistics;              // calculated in postProcessing
+            metric          DF_metric;
+        };
+    };
+};
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

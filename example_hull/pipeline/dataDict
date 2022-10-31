@@ -1,0 +1,72 @@
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+// *  DATA DICT                                                           * 
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+// Define parameters for feature and label extraction from stl files
+
+directory                   data/preparedData/;
+
+featureExtraction
+{
+    filename                DF_feature;
+    subFeatures
+    {
+        //name              formula
+        x                   'x';
+        y                   'y';
+        z                   'z';
+       // radius              'np.sqrt(x**2+y**2+z**2)';
+    };
+    numberOfFeatures        1024;
+    // sample type: uniform or gradient
+    sampleType              uniform;
+};
+
+labelExtraction
+{
+    filename                DF_label;
+};
+
+objectTransformation
+{
+    filename                DF_transformation;
+    
+    saveTransformedSTL      yes;
+    howMany                 5;
+    
+    translation             no;
+    rotation                no;
+    scaling                 no;
+    // do transformation in random or sorted order
+    order                   random;                 
+    // rotation using Euler angles
+    rotationParameters                              
+    {
+        // percentage of all objects
+        percentage          1;                    
+        // max Rotation, *math.pi in x,y,z direction
+        maxRotation         0.0698;       
+        // successive rotation axis               
+        axis                'sxyz';                 
+    };
+};
+
+
+dataPreparation
+{
+    // done in NeuralNetwork class
+    writeParametersTo       parameters;
+
+    shuffleSampleOrder
+    {
+        preSplitting        yes;
+        postSplitting       yes;
+    };
+    
+    shuffleVerticeOrder     yes;
+
+    normalize               yes;
+    
+};
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

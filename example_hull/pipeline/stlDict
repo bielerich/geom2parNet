@@ -1,0 +1,33 @@
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+// *  STL DICT                                                               * 
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+// Give input parameters for stl creation.
+
+// directory in which stl files are getting saved
+directory                       data/rawData/STL;       
+
+labelKeyFile
+{
+    directory                   data/rawData/;
+    filename                    DF_label_key;
+};
+    
+objectParameters
+{
+    type                        hull_no_0;                 
+    
+    controlParameters
+    {
+        FOS_length              '[50, 150]'; 
+        stem_distance 		    '[5, 15]'; 
+        entrance_angle_wl       '[10, 60]'; 
+        WL_starttan_gradient  	'[60, 120]'; 
+    };
+
+    numberOfObjects             4000;
+    reindex                     0;
+};
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    
