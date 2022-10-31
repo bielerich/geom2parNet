@@ -15,7 +15,7 @@ Point Sets in a Metric Space](https://arxiv.org/pdf/1706.02413.pdf)
 - [PointCNN: Convolution On X -Transformed Points](https://arxiv.org/pdf/1801.07791.pdf)
 
 
-For programming, I used Tensorflow and Keras. I followed this example of [Point cloud classification with PointNet](https://keras.io/examples/vision/pointnet/) for feeding the point cloud data into my NN. 
+For programming, I used [Tensorflow](https://www.tensorflow.org/) and [Keras](https://keras.io/). I followed this example of [Point cloud classification with PointNet](https://keras.io/examples/vision/pointnet/) for feeding the point cloud data into my NN. 
 
 
 ## Background Information
@@ -32,6 +32,7 @@ Prerequirements for executing the scripts are:
 
 - python 3
 - tensorflow version > 2.0
+- keras
 - numpy
 - pandas
 - scikit-learn
