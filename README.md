@@ -6,6 +6,8 @@ This is a draft.
 ## About the Project
 This project is part of my project thesis, in which I tried to find a way to find descriptive parameters from a given geometry represented by a point cloud. I wanted to answer the question: it is feasible to solve this problem using Deep Learning Neural Networks? 
 
+I had the chance to present my results on the [CAESES](https://www.caeses.com/) User Conference and a short summary of the presentation can be found on their website [here](https://www.caeses.com/blog/2022/geometry-to-parameter-mapping-based-on-neural-networks/) and [here](https://www.friendship-systems.com/wp-content/uploads/2022/10/JohannaSerr_TUHH_GeometryToParameterMappingBasedOnNeuralNetworks.pdf).
+
 I haven't worked with Neural Networks before, but I relatively quickly found out that working with point clouds as input parameters for NN is quite challenging. Some papers I found that adress this challenge are:
 
 
